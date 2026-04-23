@@ -43,8 +43,8 @@ userRouter.patch("/resetPassword",validation(UV.resetPasswordSchema),US.resetPas
 
 userRouter.post("/refreshToken",US.refreshToken)
 
-userRouter.delete("/freeze/{:id}",validation(UV.freezeSchema),authentication,US.freeze)
+userRouter.delete("/freeze/:id",validation(UV.freezeSchema),authentication,US.freeze)
 
-userRouter.delete("/unfreeze/{:id}",validation(UV.unfreezeSchema),authentication,US.unfreeze)
+userRouter.delete("/unfreeze/:id",validation(UV.unfreezeSchema),authentication,US.unfreeze)
 
 export default userRouter

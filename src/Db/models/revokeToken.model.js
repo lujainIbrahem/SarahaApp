@@ -16,6 +16,6 @@ import mongoose from 'mongoose';
 });
 
 
- const RevokeToken = mongoose.models.Message ||  mongoose.model('Revoke',revokeToken);
+ const RevokeToken = mongoose.models.Revoke ||  mongoose.model('Revoke',revokeToken);
 
 export default RevokeToken

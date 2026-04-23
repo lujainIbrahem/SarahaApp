@@ -20,7 +20,8 @@ export const userProvider = {
  name:{
     type:String,
     required:true,
-    minLenght:3
+    minLength:3
+
  },
  email:{
     type:String,

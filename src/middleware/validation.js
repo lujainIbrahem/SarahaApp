@@ -2,19 +2,19 @@
 //body ,query
 
 
-export const validation = (schema)=>{
-    return (req ,res,next)=>{
-        let validationError=[]
+export const validation = (schema) => {
+    return (req, res, next) => {
+        let validationError = []
         for (const key of Object.keys(schema)) {
-            const data =  schema[key].validate(req[key],{ abortEarly:false })
-            if(data?.error){
+            const data = schema[key].validate(req[key], { abortEarly: false })
+            if (data?.error) {
                 validationError.push(data?.error?.details)
             }
         }
-        if(validationError.length){
-    res.status(401).json({error:validationError})
-        }   
-         return next()
+        if (validationError.length) {
+            res.status(401).json({ error: validationError })
+        }
+        next()
 
     }
 }

@@ -6,11 +6,11 @@ import userModel from "../../Db/models/user.model.js"
 export const createMessage = async(req,res,next)=>{
 
 
-const {userId,contant}=req.body
+const {userId,content}=req.body
 if ( !await userModel.findOne({_id:userId ,isDeleted:{ $exists:false}})){
     throw new Error("user not exit ");
 }
-const messages = await messageModel.create({ contant,userId})
+const messages = await messageModel.create({ content,userId})
 
     return res.status(201).json({message:"done",messages})
 

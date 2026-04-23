@@ -45,9 +45,6 @@ const user = await userModel.create({
 }
 
 
-
-
-
 //======================== confirm =====================
 export const confirmed = async(req,res,next)=>{
 try {
@@ -283,8 +280,7 @@ return res.status(200).json({message:" success"})
 } 
 
 
-
-//======================== forget Password =====================
+//======================== reset Password =====================
 export const resetPassword = async(req,res,next)=>{
  
 const { email , otp ,newPassword }= req.body
@@ -326,7 +322,7 @@ if(user){
     throw new Error("email already exit", {cause :401});
 }
 eventEmiiter.emit("sendEmail",{ email })
-req.user.email=email
+req.user.email = email
 req.user.confirmed = false
 }
 

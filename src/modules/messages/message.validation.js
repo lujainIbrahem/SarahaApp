@@ -4,7 +4,7 @@ import { generalRules } from "../../utils/index.js"
 export const createMessageSchema={
     body:joi.object({
         userId:generalRules.id.required(),
-        contant:joi.string().min(1).required()
+        content:joi.string().min(1).required()
     }).required()
 }
 
