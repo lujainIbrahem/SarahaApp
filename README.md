@@ -25,7 +25,7 @@ Backend API for a secure social media / anonymous messaging application built wi
 - Send Anonymous Messages
 - Get All Messages for User
 - Get Single Message
-
+  
 ### 📁 File Handling
 - Image Upload using Multer
 - Cloud Storage Integration (Cloudinary)
