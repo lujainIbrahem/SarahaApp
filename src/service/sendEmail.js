@@ -14,7 +14,7 @@ export const sendEmail = async ({to,subject,text,html})=>{
 
   const info = await transporter.sendMail({
     from: `"lojy" ${process.env.EMAIL}`,
-    to:to || "lojyibrahem7@gmail.com",
+    to:to || "lojyibrahem30@gmail.com",
     subject: subject||"Hello ✔",
     text: text||"Hello world?", 
     html:html|| "<b>Hello world?</b>", 
