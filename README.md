@@ -11,8 +11,8 @@ A secure and scalable RESTful API for an anonymous messaging platform, built wit
 
 ## 🔗 Links
 
-- API Documentation: https://documenter.getpostman.com/view/44975525/2sB3BKFoS7
-- GitHub Repository: https://github.com/lujainIbrahem/SarahaApp
+- 📮 API Documentation: [Postman Docs](https://documenter.getpostman.com/view/44975525/2sB3BKFoS7)
+- 💻 GitHub Repository: [SarahaApp](https://github.com/lujainIbrahem/SarahaApp)
 
 ---
 
@@ -104,6 +104,7 @@ BASE_URL=
 
 ## 🏗 Project Structure
 
+```text
 src
 ├── Db
 ├── middleware
@@ -114,7 +115,7 @@ src
 ├── service
 └── config
 
----
+```
 
 ## 📌 API Endpoints
 
@@ -175,6 +176,22 @@ It focuses on:
 - Scalable and modular architecture
 
 The project follows backend best practices and is designed to be production-ready and easily extendable.
+
+---
+
+## 🚀 Future Improvements
+
+- API Documentation using Swagger
+- Docker Support
+- Pagination for Messages
+- Deployment on Render
+- Unit & Integration Testing
+
+  ---
+
+## 📄 License
+
+This project is licensed for educational and portfolio purposes.
 
 ---
 
