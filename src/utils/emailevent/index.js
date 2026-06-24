@@ -10,8 +10,7 @@ var token =await generateToken({ payload:{ email } ,
     SIGNATURE:process.env.SIGNATURE ,
      options:{ expiresIn : 60 * 3  }
     });
-
-const link = `http://localhost:3000/users/confirmed/${token}`
+    const link = `${process.env.BASE_URL}/users/confirmed/${token}`
 
 const isSend =await sendEmail({
    to:email ,

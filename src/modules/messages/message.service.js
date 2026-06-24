@@ -28,7 +28,7 @@ const messages = await messageModel.find({ userId: req?.user?._id}).populate([
     }
 ])
 
-    return res.status(201).json({message:"done",messages})
+    return res.status(200).json({message:"done",messages})
 
 }
 
@@ -41,7 +41,7 @@ export const getOneMessage = async(req,res,next)=>{
 
 const messages = await messageModel.findOne({ userId: req?.user?._id , _id : id })
 
-    return res.status(201).json({message:"done",messages})
+    return res.status(200).json({message:"done",messages})
 
 }
 

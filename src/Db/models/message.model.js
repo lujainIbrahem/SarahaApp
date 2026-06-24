@@ -4,12 +4,12 @@ import mongoose from 'mongoose';
 
  content:{
     type:String,
-    require:true
+    required:true
  },
  userId:{
     type:mongoose.Schema.Types.ObjectId,
     ref:"User",
-    require:true
+    required:true
  }
 
 },{

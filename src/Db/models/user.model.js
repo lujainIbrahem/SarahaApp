@@ -24,6 +24,7 @@ export const userProvider = {
 
  },
  email:{
+   unique:true,
     type:String,
     required:true
  },

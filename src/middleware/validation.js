@@ -12,7 +12,7 @@ export const validation = (schema) => {
             }
         }
         if (validationError.length) {
-            res.status(401).json({ error: validationError })
+          return  res.status(401).json({ error: validationError })
         }
         next()
 

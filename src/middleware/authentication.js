@@ -4,8 +4,13 @@ import { verifyToken } from '../utils/index.js';
 
 export const authentication =async(req,res,next)=>{
   
-const { authentication }= req.headers
-var [prefix,token ] =authentication.split(" ") || [] 
+const auth = req.headers.authentication
+
+if(!auth){
+   throw new Error("Authentication header missing")
+}
+
+const [prefix,token] = auth.split(" ")
 if(!prefix || !token){
   throw new Error("token not exit", {cause :404});
 }

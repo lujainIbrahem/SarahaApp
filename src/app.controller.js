@@ -25,7 +25,7 @@ const limiter = rateLimit({
 	windowMs:  60 * 1000, 
 	limit: 10, 
     handler:(req,res,next,optional)=>{
-        res.status(400).json({error:"game over"})
+        res.status(429).json({error:"game over"})
     },
 	legacyHeaders: false, 
 	
