@@ -1,6 +1,11 @@
 # 🔐 Saraha Anonymous Messaging API
 
-Backend API for a secure social media / anonymous messaging application built with Node.js, Express, and MongoDB.
+A secure and scalable RESTful API for an anonymous messaging platform, built with Node.js, Express.js, MongoDB, JWT Authentication, Google OAuth, Cloudinary, and modern backend security practices.
+
+![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white)
+![Express](https://img.shields.io/badge/Express.js-000000?logo=express&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-black?logo=jsonwebtokens)
 
 ---
 
