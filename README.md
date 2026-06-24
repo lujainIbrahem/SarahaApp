@@ -1,6 +1,13 @@
-# 🔐 Social App Backend (Saraha App)
+# 🔐 Saraha Anonymous Messaging API
 
 Backend API for a secure social media / anonymous messaging application built with Node.js, Express, and MongoDB.
+
+---
+
+## 🔗 Links
+
+- API Documentation: https://documenter.getpostman.com/view/44975525/2sB3BKFoS7
+- GitHub Repository: https://github.com/lujainIbrahem/SarahaApp
 
 ---
 
@@ -62,11 +69,12 @@ git clone https://github.com/lujainIbrahem/SarahaApp.git
 cd SarahaApp
 npm install
 npm run start
-
+```
 
 ---
 ## ⚙️ Environment Variables
 
+```env
 PORT=
 DB_URL=
 DB_URL_ONLINE=
@@ -85,6 +93,21 @@ API_KEY=
 WEB_CLIENT_ID=
 FRONT_ORIGIN=
 BASE_URL=
+```
+
+---
+
+## 🏗 Project Structure
+
+src
+├── Db
+├── middleware
+├── modules
+│   ├── users
+│   └── messages
+├── utils
+├── service
+└── config
 
 ---
 
@@ -109,6 +132,14 @@ BASE_URL=
 - POST /messages/createMessage
 - GET /messages/getAllMessage
 - GET /messages/getOneMessage/:id
+
+---
+
+## 📮 API Documentation
+
+Explore and test all available endpoints through the Postman Documentation:
+
+[View API Documentation](https://documenter.getpostman.com/view/44975525/2sB3BKFoS7)
 
 ---
 
